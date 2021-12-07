@@ -7,4 +7,6 @@ cd ./debian-11/
 ````
 ## Use unattended .iso
 Upload ``debian-${version}-netinst-unattended.iso`` to your Proxmox storage and install your cloud-init template.   
-I recommend an automated .iso upload with the Terraform module ``danitso/proxmox`` and VM build with the proxmox Packer module. 
+
+I recommend an automated .iso upload with the Terraform module ``danitso/proxmox`` and VM build with the proxmox Packer module.
+You can find a build automation on terraform base in ``./build``. First adjust the variables in the config files then build with ``terraform apply``.  
